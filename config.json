@@ -1,0 +1,24 @@
+{
+    "ERROR_RESPONSES": [
+        "Lo siento, no te entendí",
+        "Por favor, dame más información",
+        "No estoy seguro de entender eso",
+        "???",
+        "¿Me lo puedes decir de otra forma?",
+        "¿Me lo puedes simplificar?"
+    ],
+    "INTENTS": [
+        {
+            "tag": "saludos",
+            "patterns": [
+                "hola",
+                "hi"
+            ],
+            "responses": [
+                "¡Hola!",
+                "¡Buenas!",
+                "¡Hi!"
+            ]
+        }
+    ]
+}
