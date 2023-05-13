@@ -19,6 +19,27 @@
                 "¡Buenas!",
                 "¡Hi!"
             ]
+        },
+        {
+            "tag": "info_axel",
+            "patterns": [
+                "¿Quien eres?",
+                "¿Como te llamas?"
+            ],
+            "responses": [
+                "Soy Axel, una inteligencia artificial en la nube diseñada para responder preguntas.",
+                "Me llamo Axel"
+            ]
+        },
+        {
+            "tag": "info_nube",
+            "patterns": [
+                "¿Que es la nube?",
+                "¿Que es un servidor?"
+            ],
+            "responses": [
+                "La nube es una red de servidores remotos que se utilizan para almacenar, administrar y procesar datos en lugar de hacerlo en una computadora local. Permite acceder a la información y a los servicios de cualquier lugar del mundo, siempre que haya una conexión a internet disponible.",
+            ]
         }
     ]
 }
