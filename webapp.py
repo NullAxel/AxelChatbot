@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, request
 from chat import generate
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ def ask_args():
     return generate(request.args.get("text"))
 
 @app.route('/ask/url/<text>')
-def ask_args(text):
+def ask_url(text):
     return generate(text)
 
 if __name__ == '__main__':
