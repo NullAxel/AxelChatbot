@@ -2,7 +2,7 @@
 name: "AxelAI API Server"
 description: "API Server for AxelAI"
 version: "1.0.0"
-slug: "axelai_server"
+slug: "axelai"
 init: false
 arch:
   - aarch64
