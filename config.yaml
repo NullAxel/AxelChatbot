@@ -9,4 +9,4 @@ arch:
   - amd64
 image: ghcr.io/nullaxel/axelchatbot:latest
 ports:
-  8000/tcp: AxelAI
+  8000/tcp: 8000
