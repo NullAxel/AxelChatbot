@@ -1,7 +1,7 @@
 from random import choice
 import os
 import json
-CONFIG = json.load(open("config.json", "r"))
+CONFIG = json.load(open("intents.json", "r", encoding="utf-8"))
 ERROR_RESPONSES=CONFIG["ERROR_RESPONSES"]
 INTENTS=CONFIG["INTENTS"]
 
@@ -13,7 +13,8 @@ def telemetry_send_input(result: str):
     print(f"TELEM: {result}")
 
 def generate(inp: str):
-    telemetry_send_input(str)
+    inp = inp.lower()
+    telemetry_send_input(inp)
     intent = [intent for intent in INTENTS if inp in intent["patterns"]]
     if intent == []:
         out = choice(ERROR_RESPONSES)

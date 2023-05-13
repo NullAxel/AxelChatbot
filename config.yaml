@@ -1,0 +1,12 @@
+# HomeAssistant Config
+name: "AxelAI API Server"
+description: "API Server for AxelAI"
+version: "1.0.0"
+slug: "axelai_server"
+init: false
+arch:
+  - aarch64
+  - amd64
+image: ghcr.io/nullaxel/axelchatbot:latest
+ports:
+  8000/tcp: AxelAI

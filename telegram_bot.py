@@ -1,6 +1,8 @@
 import os
 import telebot
 from chat import generate
+from dotenv import load_dotenv
+load_dotenv()
 BOT_TOKEN=os.environ["TELEGRAM_BOT_TOKEN"]
 
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -10,4 +12,5 @@ def respond(message):
 
 
 if __name__ == "__main__":
+    print("Started")
     bot.infinity_polling()
