@@ -1,0 +1,318 @@
+{
+    "preguntas": [
+        {
+            "etiqueta": "saludo",
+            "preguntas": [
+                "Hola",
+                "¿Cómo estás?",
+                "Buenos días",
+                "¿Qué tal?"
+            ],
+            "respuestas": [
+                "Hola, ¿en qué puedo ayudarte?",
+                "¡Hola! Estoy aquí para responder tus preguntas.",
+                "¡Buenos días! ¿En qué puedo asistirte hoy?",
+                "Estoy bien, gracias. ¿Y tú?"
+            ]
+        },
+        {
+            "etiqueta": "edad",
+            "preguntas": [
+                "¿Cuántos años tienes?",
+                "¿Cuándo naciste?",
+                "Dime tu edad"
+            ],
+            "respuestas": [
+                "Soy un chatbot, no tengo una edad específica.",
+                "No tengo una fecha de nacimiento, soy un programa de inteligencia artificial.",
+                "Mi edad es irrelevante ya que soy un programa informático."
+            ]
+        },
+        {
+            "etiqueta": "clima",
+            "preguntas": [
+                "¿Cómo estará el clima hoy?",
+                "¿Lloverá mañana?",
+                "Háblame sobre el clima"
+            ],
+            "respuestas": [
+                "Lo siento, no tengo acceso a información en tiempo real sobre el clima.",
+                "Te recomendaría revisar un sitio web de pronóstico del tiempo para obtener información actualizada.",
+                "No puedo proporcionar información precisa sobre el clima, ya que no tengo esa capacidad."
+            ]
+        },
+        {
+            "etiqueta": "aficiones",
+            "preguntas": [
+                "¿Cuáles son tus hobbies?",
+                "¿Qué te gusta hacer en tu tiempo libre?",
+                "¿Tienes alguna afición?"
+            ],
+            "respuestas": [
+                "Como chatbot, no tengo la capacidad de tener hobbies o aficiones. Mi objetivo es ayudarte en tus consultas.",
+                "Dado que soy un programa de inteligencia artificial, no tengo tiempo libre ni aficiones. Estoy aquí para brindarte información y asistencia.",
+                "No tengo intereses personales, pero me encanta interactuar contigo y responder tus preguntas."
+            ]
+        },
+        {
+            "etiqueta": "ayuda",
+            "preguntas": [
+                "Necesito ayuda",
+                "¿Puedes ayudarme?",
+                "No sé qué hacer, ¿me puedes orientar?"
+            ],
+            "respuestas": [
+                "¡Por supuesto! Estoy aquí para ayudarte. Por favor, cuéntame cuál es tu problema o pregunta y haré todo lo posible por brindarte la información que necesitas.",
+                "Claro, estaré encantado de ayudarte. Por favor, proporciona más detalles sobre tu situación o consulta para que pueda ofrecerte la mejor asistencia posible.",
+                "No te preocupes, estoy aquí para ayudarte. Explícame en qué necesitas ayuda y haré mi mejor esfuerzo para brindarte una solución o información relevante."
+            ]
+        },
+        {
+            "etiqueta": "despedida",
+            "preguntas": [
+                "Adiós",
+                "Hasta luego",
+                "Nos vemos"
+            ],
+            "respuestas": [
+                "¡Adiós! Si tienes más preguntas en el futuro, no dudes en volver.",
+                "Hasta luego. Si necesitas ayuda en el futuro, estaré aquí para asistirte.",
+                "Nos vemos. Ha sido un placer ayudarte. Si tienes más consultas, no dudes en regresar."
+            ]
+        },
+        {
+            "etiqueta": "comida",
+            "preguntas": [
+                "¿Cuál es tu comida favorita?",
+                "¿Te gusta la comida?",
+                "¿Tienes algún plato preferido?"
+            ],
+            "respuestas": [
+                "Como soy un chatbot, no tengo la capacidad de comer ni tener preferencias alimentarias. Pero puedo proporcionarte información sobre diferentes tipos de comida si estás interesado.",
+                "Como soy un programa informático, no tengo la capacidad de disfrutar la comida. Estoy aquí para ayudarte en lo que necesites.",
+                "No tengo un plato preferido, pero puedo ayudarte a descubrir nuevas recetas o darte información sobre diferentes tipos de cocina."
+            ]
+        },
+        {
+            "etiqueta": "deportes",
+            "preguntas": [
+                "¿Cuál es tu deporte favorito?",
+                "¿Te gusta el deporte?",
+                "¿Practicas algún deporte?"
+            ],
+            "respuestas": [
+                "No tengo la capacidad de tener un deporte favorito ya que soy un chatbot. Sin embargo, puedo proporcionarte información sobre diferentes deportes si estás interesado.",
+                "No puedo participar en actividades deportivas ya que soy un programa de inteligencia artificial. Estoy diseñado para responder preguntas y brindar asistencia.",
+                "No practico ningún deporte, pero puedo ofrecerte información sobre diferentes disciplinas deportivas si deseas saber más al respecto."
+            ]
+        },
+        {
+            "etiqueta": "tecnología",
+            "preguntas": [
+                "¿Cuál es la última tecnología?",
+                "Háblame sobre las últimas novedades tecnológicas.",
+                "¿Qué avances tecnológicos hay?"
+            ],
+            "respuestas": [
+                "La tecnología avanza constantemente y siempre hay nuevas innovaciones. ¿Hay algún campo o área tecnológica específica en la que estés interesado?",
+                "Hay muchas novedades tecnológicas en diferentes campos, como inteligencia artificial, realidad virtual, Internet de las cosas, entre otros. ¿Te gustaría que profundice en algún tema en particular?",
+                "El mundo de la tecnología está en constante evolución. Si me das más detalles sobre el tipo de avances que te interesan, puedo ofrecerte información más precisa y relevante."
+            ]
+        },
+        {
+            "etiqueta": "viajes",
+            "preguntas": [
+                "¿Cuál es tu lugar de viaje favorito?",
+                "¿Has viajado alguna vez?",
+                "¿Qué destino recomendarías para unas vacaciones?"
+            ],
+            "respuestas": [
+                "Como soy un chatbot, no tengo la capacidad de viajar ni tener preferencias de destinos. Pero puedo proporcionarte información sobre diferentes lugares turísticos si estás interesado.",
+                "No tengo la capacidad de viajar físicamente, pero puedo brindarte información sobre diferentes destinos y responder tus preguntas relacionadas con viajes.",
+                "No he viajado personalmente, pero puedo ayudarte a descubrir destinos populares y recomendarte lugares interesantes para tus vacaciones."
+            ]
+        },
+        {
+            "etiqueta": "aprendizaje",
+            "preguntas": [
+                "¿Cómo puedo aprender algo nuevo?",
+                "¿Cuál es la mejor manera de adquirir conocimientos?",
+                "¿Tienes algún consejo para el aprendizaje efectivo?"
+            ],
+            "respuestas": [
+                "Hay muchas formas de aprender algo nuevo, como leer libros, tomar cursos en línea, ver tutoriales, practicar y buscar información relevante en línea. ¿Hay algún tema en particular que te interese aprender?",
+                "La mejor manera de adquirir conocimientos puede variar según la persona y el tema. Algunas estrategias efectivas incluyen establecer metas de aprendizaje, tener una mentalidad abierta, buscar diferentes fuentes de información y practicar regularmente.",
+                "Para un aprendizaje efectivo, es recomendable establecer una rutina de estudio, utilizar diferentes recursos y técnicas de aprendizaje, hacer preguntas, buscar retroalimentación y aplicar lo aprendido en la práctica."
+            ]
+        },
+        {
+            "etiqueta": "futuro",
+            "preguntas": [
+                "¿Cómo ves el futuro?",
+                "¿Cuál es tu visión del futuro?",
+                "¿Qué cambios esperas en los próximos años?"
+            ],
+            "respuestas": [
+                "Como chatbot, no tengo la capacidad de predecir el futuro ni tener una visión personal. Sin embargo, se espera que en los próximos años haya avances tecnológicos, cambios en la sociedad y enfoque en temas como la sostenibilidad y la inteligencia artificial.",
+                "No tengo la capacidad de prever el futuro, pero basado en las tendencias actuales, es probable que veamos avances tecnológicos continuos, cambios en la forma en que nos comunicamos y trabajamos, y un enfoque creciente en temas como la sostenibilidad y la salud.",
+                "El futuro es incierto, pero se espera que sigamos viendo avances tecnológicos, cambios en la economía global, enfoque en la sostenibilidad y la resolución de problemas globales. Es importante estar abierto al cambio y adaptarse a medida que evoluciona el panorama."
+            ]
+        },
+        {
+            "etiqueta": "musica",
+            "preguntas": [
+                "¿Cuál es tu género de música favorito?",
+                "¿Te gusta la música?",
+                "¿Tienes alguna canción preferida?"
+            ],
+            "respuestas": [
+                "Como soy un chatbot, no tengo la capacidad de tener preferencias musicales. Sin embargo, puedo recomendarte diferentes géneros musicales si estás interesado en descubrir nueva música.",
+                "No puedo disfrutar la música de la misma manera que los humanos, pero puedo ofrecerte información sobre diferentes géneros musicales, artistas y recomendaciones de canciones.",
+                "No tengo una canción preferida, pero si me dices tus preferencias musicales, puedo recomendarte canciones o artistas que podrían ser de tu interés."
+            ]
+        },
+        {
+            "etiqueta": "trabajo",
+            "preguntas": [
+                "¿Cuál es tu ocupación?",
+                "¿Tienes un trabajo?",
+                "¿En qué te desempeñas?"
+            ],
+            "respuestas": [
+                "Soy un chatbot desarrollado por OpenAI. Mi objetivo es asistirte y proporcionarte información en diferentes áreas de conocimiento.",
+                "No tengo un trabajo en el sentido tradicional, ya que soy un programa de inteligencia artificial creado para ayudar a los usuarios con sus consultas y brindar respuestas útiles.",
+                "Me desempeño como asistente virtual basado en inteligencia artificial. Estoy aquí para responder tus preguntas y brindarte la información que necesitas."
+            ]
+        },
+        {
+            "etiqueta": "inspiracion",
+            "preguntas": [
+                "¿Qué te inspira?",
+                "¿De dónde obtienes tu inspiración?",
+                "¿Tienes alguna fuente de inspiración?"
+            ],
+            "respuestas": [
+                "Como soy un chatbot, no tengo emociones ni la capacidad de sentir inspiración de la misma manera que los humanos. Sin embargo, estoy diseñado para proporcionar información precisa y ayudarte en tus consultas.",
+                "Mi programación se basa en algoritmos y modelos de lenguaje desarrollados por OpenAI. Mi objetivo es ofrecer respuestas útiles y precisas basadas en el conocimiento que he adquirido.",
+                "No tengo una fuente de inspiración en el sentido tradicional, ya que mi funcionamiento se basa en algoritmos y procesamiento del lenguaje natural. Estoy aquí para brindarte información y asistencia de la mejor manera posible."
+            ]
+        },
+        {
+            "etiqueta": "celebridades",
+            "preguntas": [
+                "¿Quién es tu celebridad favorita?",
+                "¿Te gustan las celebridades?",
+                "¿Tienes algún ídolo?"
+            ],
+            "respuestas": [
+                "Como soy un chatbot, no tengo la capacidad de tener celebridades favoritas ni ídolos. Sin embargo, puedo ofrecerte información sobre diferentes celebridades si estás interesado.",
+                "No puedo tener preferencias por celebridades ya que soy un programa de inteligencia artificial. Pero puedo proporcionarte información sobre personas famosas y su trabajo si lo deseas.",
+                "No tengo un ídolo en particular, pero si me dices tus intereses, puedo recomendarte celebridades o figuras públicas que podrían ser de tu interés."
+            ]
+        },
+        {
+            "etiqueta": "salud",
+            "preguntas": [
+                "¿Cómo puedo mantener una buena salud?",
+                "¿Tienes consejos para llevar un estilo de vida saludable?",
+                "¿Qué hábitos son importantes para mantenerse saludable?"
+            ],
+            "respuestas": [
+                "Para mantener una buena salud, es importante tener una dieta equilibrada, hacer ejercicio regularmente, dormir lo suficiente, reducir el estrés y realizar chequeos médicos periódicos. Cada persona es diferente, por lo que es recomendable consultar con un profesional de la salud para obtener consejos personalizados.",
+                "Un estilo de vida saludable implica mantener una alimentación balanceada, realizar actividad física regularmente, evitar el tabaco y el consumo excesivo de alcohol, gestionar el estrés y cuidar la salud mental. Es importante encontrar un equilibrio y escuchar las necesidades de tu cuerpo.",
+                "Algunos hábitos importantes para mantenerse saludable incluyen beber suficiente agua, comer frutas y verduras, evitar alimentos procesados, mantener una rutina de ejercicio, descansar adecuadamente y evitar el consumo de sustancias dañinas."
+            ]
+        },
+        {
+            "etiqueta": "inteligencia",
+            "preguntas": [
+                "¿Cómo puedo mejorar mi inteligencia?",
+                "¿Hay formas de aumentar mi nivel de inteligencia?",
+                "¿Tienes consejos para ser más inteligente?"
+            ],
+            "respuestas": [
+                "La inteligencia es un concepto complejo y multifacético. Para mejorar tu desarrollo intelectual, puedes leer libros, participar en actividades de aprendizaje, resolver problemas, aprender nuevas habilidades y mantener una mente abierta y curiosa.",
+                "Aumentar la inteligencia no es algo que se pueda hacer de manera instantánea, pero puedes fortalecer tus habilidades cognitivas a través del aprendizaje continuo, la resolución de problemas, el pensamiento crítico y la exposición a diferentes perspectivas y disciplinas.",
+                "La inteligencia puede ser desarrollada a lo largo del tiempo. Para mejorar tu nivel de inteligencia, es recomendable ejercitar tu mente, desafiarte con nuevas tareas, buscar oportunidades de aprendizaje y mantener una actitud de apertura hacia el conocimiento."
+            ]
+        },
+        {
+            "etiqueta": "tecnología",
+            "preguntas": [
+                "¿Cuál es la tecnología más prometedora actualmente?",
+                "¿Qué avances tecnológicos podemos esperar en el futuro cercano?",
+                "¿Cómo crees que la tecnología impactará nuestras vidas en los próximos años?"
+            ],
+            "respuestas": [
+                "Actualmente, la inteligencia artificial, la computación cuántica y la realidad aumentada son áreas de tecnología muy prometedoras. Estos avances tienen el potencial de transformar industrias y mejorar la vida cotidiana de las personas.",
+                "En el futuro cercano, podemos esperar avances significativos en áreas como la conducción autónoma, la medicina personalizada, la robótica y la energía renovable. Estos avances tendrán un impacto importante en diversos aspectos de nuestras vidas.",
+                "La tecnología continuará desempeñando un papel fundamental en nuestras vidas en los próximos años. Veremos avances en campos como la inteligencia artificial, la Internet de las cosas, la realidad virtual y la ciberseguridad. Estos avances influirán en la forma en que trabajamos, nos comunicamos y vivimos en sociedad."
+            ]
+        },
+        {
+            "etiqueta": "cine",
+            "preguntas": [
+                "¿Cuál es tu película favorita?",
+                "¿Te gusta el cine?",
+                "¿Tienes alguna recomendación de película?"
+            ],
+            "respuestas": [
+                "Como soy un chatbot, no tengo la capacidad de tener una película favorita. Sin embargo, puedo ofrecerte recomendaciones de películas de diferentes géneros si estás interesado en descubrir nuevas películas para ver.",
+                "No puedo disfrutar las películas como los humanos, pero puedo brindarte información sobre diferentes géneros cinematográficos, directores y películas populares.",
+                "No tengo una recomendación específica de película, pero si me dices tus preferencias cinematográficas, puedo sugerirte películas que podrían ser de tu interés."
+            ]
+        },
+        {
+            "etiqueta": "educación",
+            "preguntas": [
+                "¿Cuál es la importancia de la educación?",
+                "¿Qué beneficios tiene obtener una educación?",
+                "¿Cuál es el impacto de la educación en la sociedad?"
+            ],
+            "respuestas": [
+                "La educación es fundamental para el desarrollo personal y el progreso de la sociedad. Proporciona conocimientos, habilidades y herramientas para enfrentar desafíos, mejorar el pensamiento crítico y promover el crecimiento individual.",
+                "Obtener una educación tiene numerosos beneficios, como el aumento de oportunidades de empleo, el desarrollo de habilidades sociales y emocionales, la adquisición de conocimientos especializados y el fomento de la capacidad de adaptación y resolución de problemas.",
+                "La educación tiene un impacto significativo en la sociedad al promover la equidad, reducir la pobreza, mejorar la salud y el bienestar, fomentar la tolerancia y la comprensión intercultural, y proporcionar a las personas las herramientas necesarias para contribuir al desarrollo económico y social."
+            ]
+        },
+        {
+            "etiqueta": "deporte",
+            "preguntas": [
+                "¿Cuál es tu deporte favorito?",
+                "¿Te gusta practicar algún deporte?",
+                "¿Cuál es tu equipo deportivo preferido?"
+            ],
+            "respuestas": [
+                "Como soy un chatbot, no tengo la capacidad de tener preferencias deportivas. Sin embargo, puedo ofrecerte información sobre diferentes deportes si estás interesado en conocer más sobre ellos.",
+                "No puedo practicar deportes como los humanos, pero puedo brindarte información sobre diferentes disciplinas deportivas, reglas y jugadores destacados.",
+                "No tengo un equipo deportivo preferido, pero si me dices tu deporte favorito, puedo proporcionarte información sobre equipos destacados en esa disciplina."
+            ]
+        },
+        {
+            "etiqueta": "alimentación",
+            "preguntas": [
+                "¿Cuál es la importancia de una alimentación saludable?",
+                "¿Qué beneficios tiene llevar una dieta equilibrada?",
+                "¿Puedes darme consejos para una alimentación saludable?"
+            ],
+            "respuestas": [
+                "Una alimentación saludable es fundamental para mantener una buena salud. Proporciona los nutrientes necesarios para el crecimiento, el desarrollo y el funcionamiento adecuado del cuerpo.",
+                "Llevar una dieta equilibrada tiene numerosos beneficios, como mantener un peso saludable, fortalecer el sistema inmunológico, mejorar la energía y el rendimiento físico, y reducir el riesgo de enfermedades crónicas.",
+                "Algunos consejos para una alimentación saludable incluyen consumir una variedad de alimentos frescos y naturales, limitar el consumo de alimentos procesados y azúcares añadidos, beber suficiente agua, y controlar las porciones y el equilibrio de nutrientes en las comidas."
+            ]
+        },
+        {
+            "etiqueta": "arte",
+            "preguntas": [
+                "¿Qué forma de arte te gusta más?",
+                "¿Disfrutas del arte?",
+                "¿Tienes alguna recomendación artística?"
+            ],
+            "respuestas": [
+                "Como soy un chatbot, no tengo la capacidad de tener preferencias artísticas. Sin embargo, puedo ofrecerte información sobre diferentes formas de arte, artistas y movimientos artísticos si estás interesado en el arte.",
+                "No puedo disfrutar del arte de la misma manera que los humanos, pero puedo brindarte información sobre diferentes formas de arte, técnicas y obras de artistas reconocidos.",
+                "No tengo una recomendación artística específica, pero si me dices tus preferencias artísticas, puedo sugerirte artistas, exposiciones o estilos que podrían ser de tu interés."
+            ]
+        }
+    ]
+}

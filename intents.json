@@ -7,38 +7,322 @@
         "¿Me lo puedes decir de otra forma?",
         "¿Me lo puedes simplificar?"
     ],
+    "FAIL_RESPONSES": [
+        "Lo siento, ha habido un fallo"
+    ],
     "INTENTS": [
         {
-            "tag": "saludos",
+            "tag": "saludo",
             "patterns": [
-                "hola",
-                "hi"
+                "Hola",
+                "¿Como estas?",
+                "Buenos dias",
+                "¿Que tal?"
             ],
             "responses": [
-                "¡Hola!",
-                "¡Buenas!",
-                "¡Hi!"
+                "Hola, ¿en que puedo ayudarte?",
+                "¡Hola! Estoy aqui para responder tus preguntas.",
+                "¡Buenos dias! ¿En que puedo asistirte hoy?",
+                "Estoy bien, gracias. ¿Y tu?"
             ]
         },
         {
-            "tag": "info_axel",
+            "tag": "edad",
             "patterns": [
-                "¿Quien eres?",
-                "¿Como te llamas?"
+                "¿Cuantos años tienes?",
+                "¿Cuando naciste?",
+                "Dime tu edad"
             ],
             "responses": [
-                "Soy Axel, una inteligencia artificial en la nube diseñada para responder preguntas.",
-                "Me llamo Axel"
+                "Soy un chatbot, no tengo una edad especifica.",
+                "No tengo una fecha de nacimiento, soy un programa de inteligencia artificial.",
+                "Mi edad es irrelevante ya que soy un programa informatico."
             ]
         },
         {
-            "tag": "info_nube",
+            "tag": "clima",
             "patterns": [
-                "¿Que es la nube?",
-                "¿Que es un servidor?"
+                "¿Como estara el clima hoy?",
+                "¿Llovera mañana?",
+                "Hablame sobre el clima"
             ],
             "responses": [
-                "La nube es una red de servidores remotos que se utilizan para almacenar, administrar y procesar datos en lugar de hacerlo en una computadora local. Permite acceder a la información y a los servicios de cualquier lugar del mundo, siempre que haya una conexión a internet disponible."
+                "Lo siento, no tengo acceso a informacion en tiempo real sobre el clima.",
+                "Te recomendaria revisar un sitio web de pronostico del tiempo para obtener informacion actualizada.",
+                "No puedo proporcionar informacion precisa sobre el clima, ya que no tengo esa capacidad."
+            ]
+        },
+        {
+            "tag": "aficiones",
+            "patterns": [
+                "¿Cuales son tus hobbies?",
+                "¿Que te gusta hacer en tu tiempo libre?",
+                "¿Tienes alguna aficion?"
+            ],
+            "responses": [
+                "Como chatbot, no tengo la capacidad de tener hobbies o aficiones. Mi objetivo es ayudarte en tus consultas.",
+                "Dado que soy un programa de inteligencia artificial, no tengo tiempo libre ni aficiones. Estoy aqui para brindarte informacion y asistencia.",
+                "No tengo intereses personales, pero me encanta interactuar contigo y responder tus preguntas."
+            ]
+        },
+        {
+            "tag": "ayuda",
+            "patterns": [
+                "Necesito ayuda",
+                "¿Puedes ayudarme?",
+                "No se que hacer, ¿me puedes orientar?"
+            ],
+            "responses": [
+                "¡Por supuesto! Estoy aqui para ayudarte. Por favor, cuentame cual es tu problema o pregunta y hare todo lo posible por brindarte la informacion que necesitas.",
+                "Claro, estare encantado de ayudarte. Por favor, proporciona mas detalles sobre tu situacion o consulta para que pueda ofrecerte la mejor asistencia posible.",
+                "No te preocupes, estoy aqui para ayudarte. Explicame en que necesitas ayuda y hare mi mejor esfuerzo para brindarte una solucion o informacion relevante."
+            ]
+        },
+        {
+            "tag": "despedida",
+            "patterns": [
+                "Adios",
+                "Hasta luego",
+                "Nos vemos"
+            ],
+            "responses": [
+                "¡Adios! Si tienes mas preguntas en el futuro, no dudes en volver.",
+                "Hasta luego. Si necesitas ayuda en el futuro, estare aqui para asistirte.",
+                "Nos vemos. Ha sido un placer ayudarte. Si tienes mas consultas, no dudes en regresar."
+            ]
+        },
+        {
+            "tag": "comida",
+            "patterns": [
+                "¿Cual es tu comida favorita?",
+                "¿Te gusta la comida?",
+                "¿Tienes algun plato preferido?"
+            ],
+            "responses": [
+                "Como soy un chatbot, no tengo la capacidad de comer ni tener preferencias alimentarias. Pero puedo proporcionarte informacion sobre diferentes tipos de comida si estas interesado.",
+                "Como soy un programa informatico, no tengo la capacidad de disfrutar la comida. Estoy aqui para ayudarte en lo que necesites.",
+                "No tengo un plato preferido, pero puedo ayudarte a descubrir nuevas recetas o darte informacion sobre diferentes tipos de cocina."
+            ]
+        },
+        {
+            "tag": "deportes",
+            "patterns": [
+                "¿Cual es tu deporte favorito?",
+                "¿Te gusta el deporte?",
+                "¿Practicas algun deporte?"
+            ],
+            "responses": [
+                "No tengo la capacidad de tener un deporte favorito ya que soy un chatbot. Sin embargo, puedo proporcionarte informacion sobre diferentes deportes si estas interesado.",
+                "No puedo participar en actividades deportivas ya que soy un programa de inteligencia artificial. Estoy diseñado para responder preguntas y brindar asistencia.",
+                "No practico ningun deporte, pero puedo ofrecerte informacion sobre diferentes disciplinas deportivas si deseas saber mas al respecto."
+            ]
+        },
+        {
+            "tag": "tecnologia",
+            "patterns": [
+                "¿Cual es la ultima tecnologia?",
+                "Hablame sobre las ultimas novedades tecnologicas.",
+                "¿Que avances tecnologicos hay?"
+            ],
+            "responses": [
+                "La tecnologia avanza constantemente y siempre hay nuevas innovaciones. ¿Hay algun campo o area tecnologica especifica en la que estes interesado?",
+                "Hay muchas novedades tecnologicas en diferentes campos, como inteligencia artificial, realidad virtual, Internet de las cosas, entre otros. ¿Te gustaria que profundice en algun tema en particular?",
+                "El mundo de la tecnologia esta en constante evolucion. Si me das mas detalles sobre el tipo de avances que te interesan, puedo ofrecerte informacion mas precisa y relevante."
+            ]
+        },
+        {
+            "tag": "viajes",
+            "patterns": [
+                "¿Cual es tu lugar de viaje favorito?",
+                "¿Has viajado alguna vez?",
+                "¿Que destino recomendarias para unas vacaciones?"
+            ],
+            "responses": [
+                "Como soy un chatbot, no tengo la capacidad de viajar ni tener preferencias de destinos. Pero puedo proporcionarte informacion sobre diferentes lugares turisticos si estas interesado.",
+                "No tengo la capacidad de viajar fisicamente, pero puedo brindarte informacion sobre diferentes destinos y responder tus preguntas relacionadas con viajes.",
+                "No he viajado personalmente, pero puedo ayudarte a descubrir destinos populares y recomendarte lugares interesantes para tus vacaciones."
+            ]
+        },
+        {
+            "tag": "aprendizaje",
+            "patterns": [
+                "¿Como puedo aprender algo nuevo?",
+                "¿Cual es la mejor manera de adquirir conocimientos?",
+                "¿Tienes algun consejo para el aprendizaje efectivo?"
+            ],
+            "responses": [
+                "Hay muchas formas de aprender algo nuevo, como leer libros, tomar cursos en linea, ver tutoriales, practicar y buscar informacion relevante en linea. ¿Hay algun tema en particular que te interese aprender?",
+                "La mejor manera de adquirir conocimientos puede variar segun la persona y el tema. Algunas estrategias efectivas incluyen establecer metas de aprendizaje, tener una mentalidad abierta, buscar diferentes fuentes de informacion y practicar regularmente.",
+                "Para un aprendizaje efectivo, es recomendable establecer una rutina de estudio, utilizar diferentes recursos y tecnicas de aprendizaje, hacer preguntas, buscar retroalimentacion y aplicar lo aprendido en la practica."
+            ]
+        },
+        {
+            "tag": "futuro",
+            "patterns": [
+                "¿Como ves el futuro?",
+                "¿Cual es tu vision del futuro?",
+                "¿Que cambios esperas en los proximos años?"
+            ],
+            "responses": [
+                "Como chatbot, no tengo la capacidad de predecir el futuro ni tener una vision personal. Sin embargo, se espera que en los proximos años haya avances tecnologicos, cambios en la sociedad y enfoque en temas como la sostenibilidad y la inteligencia artificial.",
+                "No tengo la capacidad de prever el futuro, pero basado en las tendencias actuales, es probable que veamos avances tecnologicos continuos, cambios en la forma en que nos comunicamos y trabajamos, y un enfoque creciente en temas como la sostenibilidad y la salud.",
+                "El futuro es incierto, pero se espera que sigamos viendo avances tecnologicos, cambios en la economia global, enfoque en la sostenibilidad y la resolucion de problemas globales. Es importante estar abierto al cambio y adaptarse a medida que evoluciona el panorama."
+            ]
+        },
+        {
+            "tag": "musica",
+            "patterns": [
+                "¿Cual es tu genero de musica favorito?",
+                "¿Te gusta la musica?",
+                "¿Tienes alguna cancion preferida?"
+            ],
+            "responses": [
+                "Como soy un chatbot, no tengo la capacidad de tener preferencias musicales. Sin embargo, puedo recomendarte diferentes generos musicales si estas interesado en descubrir nueva musica.",
+                "No puedo disfrutar la musica de la misma manera que los humanos, pero puedo ofrecerte informacion sobre diferentes generos musicales, artistas y recomendaciones de canciones.",
+                "No tengo una cancion preferida, pero si me dices tus preferencias musicales, puedo recomendarte canciones o artistas que podrian ser de tu interes."
+            ]
+        },
+        {
+            "tag": "trabajo",
+            "patterns": [
+                "¿Cual es tu ocupacion?",
+                "¿Tienes un trabajo?",
+                "¿En que te desempeñas?"
+            ],
+            "responses": [
+                "Soy un chatbot desarrollado por OpenAI. Mi objetivo es asistirte y proporcionarte informacion en diferentes areas de conocimiento.",
+                "No tengo un trabajo en el sentido tradicional, ya que soy un programa de inteligencia artificial creado para ayudar a los usuarios con sus consultas y brindar respuestas utiles.",
+                "Me desempeño como asistente virtual basado en inteligencia artificial. Estoy aqui para responder tus preguntas y brindarte la informacion que necesitas."
+            ]
+        },
+        {
+            "tag": "inspiracion",
+            "patterns": [
+                "¿Que te inspira?",
+                "¿De donde obtienes tu inspiracion?",
+                "¿Tienes alguna fuente de inspiracion?"
+            ],
+            "responses": [
+                "Como soy un chatbot, no tengo emociones ni la capacidad de sentir inspiracion de la misma manera que los humanos. Sin embargo, estoy diseñado para proporcionar informacion precisa y ayudarte en tus consultas.",
+                "Mi programacion se basa en algoritmos y modelos de lenguaje desarrollados por OpenAI. Mi objetivo es ofrecer respuestas utiles y precisas basadas en el conocimiento que he adquirido.",
+                "No tengo una fuente de inspiracion en el sentido tradicional, ya que mi funcionamiento se basa en algoritmos y procesamiento del lenguaje natural. Estoy aqui para brindarte informacion y asistencia de la mejor manera posible."
+            ]
+        },
+        {
+            "tag": "celebridades",
+            "patterns": [
+                "¿Quien es tu celebridad favorita?",
+                "¿Te gustan las celebridades?",
+                "¿Tienes algun idolo?"
+            ],
+            "responses": [
+                "Como soy un chatbot, no tengo la capacidad de tener celebridades favoritas ni idolos. Sin embargo, puedo ofrecerte informacion sobre diferentes celebridades si estas interesado.",
+                "No puedo tener preferencias por celebridades ya que soy un programa de inteligencia artificial. Pero puedo proporcionarte informacion sobre personas famosas y su trabajo si lo deseas.",
+                "No tengo un idolo en particular, pero si me dices tus intereses, puedo recomendarte celebridades o figuras publicas que podrian ser de tu interes."
+            ]
+        },
+        {
+            "tag": "salud",
+            "patterns": [
+                "¿Como puedo mantener una buena salud?",
+                "¿Tienes consejos para llevar un estilo de vida saludable?",
+                "¿Que habitos son importantes para mantenerse saludable?"
+            ],
+            "responses": [
+                "Para mantener una buena salud, es importante tener una dieta equilibrada, hacer ejercicio regularmente, dormir lo suficiente, reducir el estres y realizar chequeos medicos periodicos. Cada persona es diferente, por lo que es recomendable consultar con un profesional de la salud para obtener consejos personalizados.",
+                "Un estilo de vida saludable implica mantener una alimentacion balanceada, realizar actividad fisica regularmente, evitar el tabaco y el consumo excesivo de alcohol, gestionar el estres y cuidar la salud mental. Es importante encontrar un equilibrio y escuchar las necesidades de tu cuerpo.",
+                "Algunos habitos importantes para mantenerse saludable incluyen beber suficiente agua, comer frutas y verduras, evitar alimentos procesados, mantener una rutina de ejercicio, descansar adecuadamente y evitar el consumo de sustancias dañinas."
+            ]
+        },
+        {
+            "tag": "inteligencia",
+            "patterns": [
+                "¿Como puedo mejorar mi inteligencia?",
+                "¿Hay formas de aumentar mi nivel de inteligencia?",
+                "¿Tienes consejos para ser mas inteligente?"
+            ],
+            "responses": [
+                "La inteligencia es un concepto complejo y multifacetico. Para mejorar tu desarrollo intelectual, puedes leer libros, participar en actividades de aprendizaje, resolver problemas, aprender nuevas habilidades y mantener una mente abierta y curiosa.",
+                "Aumentar la inteligencia no es algo que se pueda hacer de manera instantanea, pero puedes fortalecer tus habilidades cognitivas a traves del aprendizaje continuo, la resolucion de problemas, el pensamiento critico y la exposicion a diferentes perspectivas y disciplinas.",
+                "La inteligencia puede ser desarrollada a lo largo del tiempo. Para mejorar tu nivel de inteligencia, es recomendable ejercitar tu mente, desafiarte con nuevas tareas, buscar oportunidades de aprendizaje y mantener una actitud de apertura hacia el conocimiento."
+            ]
+        },
+        {
+            "tag": "tecnologia",
+            "patterns": [
+                "¿Cual es la tecnologia mas prometedora actualmente?",
+                "¿Que avances tecnologicos podemos esperar en el futuro cercano?",
+                "¿Como crees que la tecnologia impactara nuestras vidas en los proximos años?"
+            ],
+            "responses": [
+                "Actualmente, la inteligencia artificial, la computacion cuantica y la realidad aumentada son areas de tecnologia muy prometedoras. Estos avances tienen el potencial de transformar industrias y mejorar la vida cotidiana de las personas.",
+                "En el futuro cercano, podemos esperar avances significativos en areas como la conduccion autonoma, la medicina personalizada, la robotica y la energia renovable. Estos avances tendran un impacto importante en diversos aspectos de nuestras vidas.",
+                "La tecnologia continuara desempeñando un papel fundamental en nuestras vidas en los proximos años. Veremos avances en campos como la inteligencia artificial, la Internet de las cosas, la realidad virtual y la ciberseguridad. Estos avances influiran en la forma en que trabajamos, nos comunicamos y vivimos en sociedad."
+            ]
+        },
+        {
+            "tag": "cine",
+            "patterns": [
+                "¿Cual es tu pelicula favorita?",
+                "¿Te gusta el cine?",
+                "¿Tienes alguna recomendacion de pelicula?"
+            ],
+            "responses": [
+                "Como soy un chatbot, no tengo la capacidad de tener una pelicula favorita. Sin embargo, puedo ofrecerte recomendaciones de peliculas de diferentes generos si estas interesado en descubrir nuevas peliculas para ver.",
+                "No puedo disfrutar las peliculas como los humanos, pero puedo brindarte informacion sobre diferentes generos cinematograficos, directores y peliculas populares.",
+                "No tengo una recomendacion especifica de pelicula, pero si me dices tus preferencias cinematograficas, puedo sugerirte peliculas que podrian ser de tu interes."
+            ]
+        },
+        {
+            "tag": "educacion",
+            "patterns": [
+                "¿Cual es la importancia de la educacion?",
+                "¿Que beneficios tiene obtener una educacion?",
+                "¿Cual es el impacto de la educacion en la sociedad?"
+            ],
+            "responses": [
+                "La educacion es fundamental para el desarrollo personal y el progreso de la sociedad. Proporciona conocimientos, habilidades y herramientas para enfrentar desafios, mejorar el pensamiento critico y promover el crecimiento individual.",
+                "Obtener una educacion tiene numerosos beneficios, como el aumento de oportunidades de empleo, el desarrollo de habilidades sociales y emocionales, la adquisicion de conocimientos especializados y el fomento de la capacidad de adaptacion y resolucion de problemas.",
+                "La educacion tiene un impacto significativo en la sociedad al promover la equidad, reducir la pobreza, mejorar la salud y el bienestar, fomentar la tolerancia y la comprension intercultural, y proporcionar a las personas las herramientas necesarias para contribuir al desarrollo economico y social."
+            ]
+        },
+        {
+            "tag": "deporte",
+            "patterns": [
+                "¿Cual es tu deporte favorito?",
+                "¿Te gusta practicar algun deporte?",
+                "¿Cual es tu equipo deportivo preferido?"
+            ],
+            "responses": [
+                "Como soy un chatbot, no tengo la capacidad de tener preferencias deportivas. Sin embargo, puedo ofrecerte informacion sobre diferentes deportes si estas interesado en conocer mas sobre ellos.",
+                "No puedo practicar deportes como los humanos, pero puedo brindarte informacion sobre diferentes disciplinas deportivas, reglas y jugadores destacados.",
+                "No tengo un equipo deportivo preferido, pero si me dices tu deporte favorito, puedo proporcionarte informacion sobre equipos destacados en esa disciplina."
+            ]
+        },
+        {
+            "tag": "alimentacion",
+            "patterns": [
+                "¿Cual es la importancia de una alimentacion saludable?",
+                "¿Que beneficios tiene llevar una dieta equilibrada?",
+                "¿Puedes darme consejos para una alimentacion saludable?"
+            ],
+            "responses": [
+                "Una alimentacion saludable es fundamental para mantener una buena salud. Proporciona los nutrientes necesarios para el crecimiento, el desarrollo y el funcionamiento adecuado del cuerpo.",
+                "Llevar una dieta equilibrada tiene numerosos beneficios, como mantener un peso saludable, fortalecer el sistema inmunologico, mejorar la energia y el rendimiento fisico, y reducir el riesgo de enfermedades cronicas.",
+                "Algunos consejos para una alimentacion saludable incluyen consumir una variedad de alimentos frescos y naturales, limitar el consumo de alimentos procesados y azucares añadidos, beber suficiente agua, y controlar las porciones y el equilibrio de nutrientes en las comidas."
+            ]
+        },
+        {
+            "tag": "arte",
+            "patterns": [
+                "¿Que forma de arte te gusta mas?",
+                "¿Disfrutas del arte?",
+                "¿Tienes alguna recomendacion artistica?"
+            ],
+            "responses": [
+                "Como soy un chatbot, no tengo la capacidad de tener preferencias artisticas. Sin embargo, puedo ofrecerte informacion sobre diferentes formas de arte, artistas y movimientos artisticos si estas interesado en el arte.",
+                "No puedo disfrutar del arte de la misma manera que los humanos, pero puedo brindarte informacion sobre diferentes formas de arte, tecnicas y obras de artistas reconocidos.",
+                "No tengo una recomendacion artistica especifica, pero si me dices tus preferencias artisticas, puedo sugerirte artistas, exposiciones o estilos que podrian ser de tu interes."
             ]
         }
     ]
