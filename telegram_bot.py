@@ -8,7 +8,7 @@ BOT_TOKEN=os.environ["TELEGRAM_BOT_TOKEN"]
 bot = telebot.TeleBot(BOT_TOKEN)
 @bot.message_handler(func=lambda msg: True)
 def respond(message):
-    bot.send_message(message.chat.id, generate(message.text))
+    bot.send_message(message.chat.id, generate(message.text)["result"])
 
 
 if __name__ == "__main__":

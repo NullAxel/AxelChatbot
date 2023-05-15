@@ -9,6 +9,6 @@ RUN pip3 install -r requirements.txt
 
 COPY chat.py chat.py
 COPY telegram_bot.py main.py
-COPY intents.json intents.json
+COPY responses.json responses.json
 
 CMD ["python3", "main.py"]

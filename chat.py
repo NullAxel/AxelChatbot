@@ -1,31 +1,31 @@
-from random import choice
+from wit import Wit
 import os
 import json
-CONFIG = json.load(open("intents.json", "r", encoding="utf-8"))
+from random import choice
+from dotenv import load_dotenv
+load_dotenv()
+access_token=os.environ["WIT_ACCESS_TOKEN"]
+client = Wit(access_token)
+CONFIG = json.load(open("responses.json", "r", encoding="utf-8"))
 ERROR_RESPONSES=CONFIG["ERROR_RESPONSES"]
-INTENTS=CONFIG["INTENTS"]
-
-
-def debug(result: str):
-    print(f"DEBUG: {result}")
-
-def telemetry_send_input(result: str):
-    print(f"TELEM: {result}")
-
+INTENTS=CONFIG["RESPONSES"]
+logs = open("logs.txt", "a", encoding="utf-8")
 def generate(inp: str):
-    inp = inp.lower()
-    inp = inp.replace("á", "a")
-    inp = inp.replace("é", "e")
-    inp = inp.replace("í", "i")
-    inp = inp.replace("ó", "o")
-    inp = inp.replace("ú", "u")
-    telemetry_send_input(inp)
-    intent = [intent for intent in INTENTS if inp in [j.lower() for j in intent["patterns"]]]
-    if intent == []:
-        out = choice(ERROR_RESPONSES)
-        debug(f"{inp};unknown;{out}")
-        return out
+    logs.write(inp)
+    print(inp)
+    result = client.message(inp)
+    if result["intents"] == []:
+        intent_name = ""
+        intent_conf = 0
     else:
-        out = choice(intent[0]["responses"])
-        debug(f"{inp};{intent[0]['tag']};{out}")
-        return out
+        intent_name = result["intents"][0]["name"]
+        intent_conf = result["intents"][0]["confidence"]
+    if intent_name == "" or intent_conf < 0.925:
+        return {"result": choice(ERROR_RESPONSES), "intent": "unknown", "input": inp}
+    else:
+        try:
+            response = choice(INTENTS[intent_name])
+            return {"result": response, "intent": intent_name, "input": inp}
+        except KeyError:
+            return {"result": choice(ERROR_RESPONSES), "intent": intent_name, "input": inp, "error": [0, "Missing intent '" + intent_name + "' in config."]}
+        
