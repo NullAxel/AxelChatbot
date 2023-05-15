@@ -10,6 +10,8 @@ RUN pip3 install -r requirements.txt
 COPY chat.py chat.py
 COPY webapp.py main.py
 COPY responses.json responses.json
-COPY templates/ .
+RUN mkdir templates
+COPY templates/index.html templates/index.html
+COPY templates/result.html templates/result.html
 
 CMD ["python3", "main.py"]
