@@ -1,10 +1,18 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from chat import generate
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template("index.html")
 
 @app.route('/ask/form')
 def ask_form():
     return generate(request.form.get("text"))["result"]
+
+@app.route('/ask/render')
+def ask_render():
+    return render_template("result.html", text=generate(request.args.get("text"))["result"])
 
 @app.route('/ask/args')
 def ask_args():

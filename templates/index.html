@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AxelAI</title>
+</head>
+
+<body>
+    <h1>AxelAI</h1>
+    <div>
+        <label for="pregunta">Pregunta</label>
+        <input type="text" name="pregunta" id="pregunta" placeholder="(Ej: ¿Como te llamas?)">
+        <button onclick="ask(document.getElementById('pregunta').value)">Enviar</button>
+    </div>
+    <script>
+        function ask(inp) {
+            let url = new URL('https://ai-api.naiel.club/ask/render');
+            url.searchParams.set('text', inp);
+            location.href = String(url);
+
+        }
+    </script>
+</body>
+
+</html>
