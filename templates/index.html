@@ -13,7 +13,7 @@
     <div>
         <label for="pregunta">Pregunta</label>
         <input type="text" name="pregunta" id="pregunta" placeholder="(Ej: ¿Como te llamas?)">
-        <button onclick="ask(document.getElementById('pregunta').value)">Enviar</button>
+        <button id="btn" onclick="ask(document.getElementById('pregunta').value)">Enviar</button>
     </div>
     <script>
         function ask(inp) {
@@ -22,6 +22,18 @@
             location.href = String(url);
 
         }
+        var input = document.getElementById("pregunta");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("btn").click();
+  }
+});
     </script>
 </body>
 
