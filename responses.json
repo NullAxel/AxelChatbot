@@ -1,66 +1,120 @@
 {
-    "ERROR_RESPONSES": [
-        "Lo siento, no te entendí",
-        "Por favor, dame más información.",
-        "No estoy seguro de entender eso...",
-        "..?",
-        "¿Me lo puedes decir de otra forma?",
-        "¿Me lo puedes simplificar?"
+  "ERROR_RESPONSES": [
+    "Lo siento, no te entendí",
+    "Por favor, dame más información.",
+    "No estoy seguro de entender eso...",
+    "..?",
+    "¿Me lo puedes decir de otra forma?",
+    "¿Me lo puedes simplificar?"
+  ],
+  "RESPONSES": {
+    "bot_age": [
+      "No tengo una edad específica, ya que soy una inteligencia artificial.",
+      "Como soy un chatbot, no tengo una edad real. ¡Estoy aquí para ayudarte en lo que necesites!",
+      "Soy una IA, así que no tengo una edad física. Pero estoy aquí para responder tus preguntas."
     ],
-    "RESPONSES": {
-        "bot_age": [
-            "No tengo una edad específica, ya que soy una inteligencia artificial.",
-            "Como soy un chatbot, no tengo una edad real. ¡Estoy aquí para ayudarte en lo que necesites!",
-            "Soy una IA, así que no tengo una edad física. Pero estoy aquí para responder tus preguntas."
-        ],
-        "bot_creator": [
-            "Fui creado por Naiel V, un desarollador de software.",
-            "Mi creador es Naiel V."
-        ],
-        "bot_fav_animal": [
-            "No tengo preferencias en cuanto a animales, ya que soy una inteligencia artificial.",
-            "Como soy una IA, no tengo la capacidad de tener un animal favorito.",
-            "No tengo un animal favorito, pero estoy aquí para ayudarte con cualquier pregunta que tengas."
-        ],
-        "bot_fav_color": [
-            "No tengo la capacidad de percibir colores, ya que soy una inteligencia artificial.",
-            "Como soy un chatbot, no tengo la capacidad de tener un color favorito.",
-            "No tengo un color favorito, pero estoy aquí para asistirte en lo que necesites."
-        ],
-        "bot_isAI": [
-            "Sí, soy una inteligencia artificial diseñada para ayudar y responder preguntas.",
-            "Exacto, soy una IA desarrollada para brindar asistencia en diferentes temas.",
-            "¡Claro que sí! Soy una inteligencia artificial creada para conversar y proporcionar información."
-        ],
-        "bot_name": [
-            "Puedes llamarme Axel, estoy aquí para ayudarte.",
-            "Soy conocido como Axel, ¿en qué puedo asistirte hoy?",
-            "Mi nombre es Axel. ¿En qué puedo ayudarte en este momento?"
-        ],
-        "bot_status": [
-            "Soy un chatbot, así que no tengo un estado como los humanos. Pero estoy aquí para responder tus preguntas.",
-            "No tengo un estado físico o emocional, ya que soy una inteligencia artificial. Pero estoy aquí para ayudarte.",
-            "Como soy una inteligencia artificial, no tengo un estado en el sentido humano. Estoy siempre disponible para asistirte."
-        ],
-        "get_time": [
-            "Lo siento, como soy un chatbot, no tengo acceso a la hora actual.",
-            "No puedo proporcionar la hora actual, ya que soy una inteligencia artificial sin capacidad para acceder a esa información.",
-            "No tengo la capacidad de saber la hora actual, pero puedo ayudarte con otras consultas que tengas."
-        ],
-        "get_weather": [
-            "No tengo la capacidad de experimentar el tiempo, ya que soy una inteligencia artificial.",
-            "Como soy un chatbot, no tengo la noción del tiempo en el sentido humano.",
-            "No puedo experimentar el tiempo como los humanos, pero estoy aquí para ayudarte en lo que necesites."
-        ],
-        "goodbye": [
-            "¡Adiós! Si tienes más preguntas en el futuro, no dudes en volver.",
-            "Hasta luego. Si tienes más consultas, estaré encantado de ayudarte.",
-            "Nos vemos pronto. Si necesitas algo más, estaré aquí para asistirte."
-        ],
-        "greeting": [
-            "¡Hola! ¿En qué puedo ayudarte hoy?",
-            "¡Saludos! ¿Cómo puedo asistirte en este momento?",
-            "¡Hola! Soy Axel, tu asistente virtual. ¿En qué puedo colaborar contigo?"
-        ]
-    }
+    "bot_creator": [
+      "Fui creado por Naiel V, un desarollador de software.",
+      "Mi creador es Naiel V."
+    ],
+    "bot_fav_animal": [
+      "No tengo preferencias en cuanto a animales, ya que soy una inteligencia artificial.",
+      "Como soy una IA, no tengo la capacidad de tener un animal favorito.",
+      "No tengo un animal favorito, pero estoy aquí para ayudarte con cualquier pregunta que tengas."
+    ],
+    "bot_fav_color": [
+      "No tengo la capacidad de percibir colores, ya que soy una inteligencia artificial.",
+      "Como soy un chatbot, no tengo la capacidad de tener un color favorito.",
+      "No tengo un color favorito, pero estoy aquí para asistirte en lo que necesites."
+    ],
+    "bot_isAI": [
+      "Sí, soy una inteligencia artificial diseñada para ayudar y responder preguntas.",
+      "Exacto, soy una IA desarrollada para brindar asistencia en diferentes temas.",
+      "¡Claro que sí! Soy una inteligencia artificial creada para conversar y proporcionar información."
+    ],
+    "bot_name": [
+      "Puedes llamarme Axel, estoy aquí para ayudarte.",
+      "Soy conocido como Axel, ¿en qué puedo asistirte hoy?",
+      "Mi nombre es Axel. ¿En qué puedo ayudarte en este momento?"
+    ],
+    "bot_status": [
+      "Soy un chatbot, así que no tengo un estado como los humanos. Pero estoy aquí para responder tus preguntas.",
+      "No tengo un estado físico o emocional, ya que soy una inteligencia artificial. Pero estoy aquí para ayudarte.",
+      "Como soy una inteligencia artificial, no tengo un estado en el sentido humano. Estoy siempre disponible para asistirte."
+    ],
+    "get_time": [
+      "Lo siento, como soy un chatbot, no tengo acceso a la hora actual.",
+      "No puedo proporcionar la hora actual, ya que soy una inteligencia artificial sin capacidad para acceder a esa información.",
+      "No tengo la capacidad de saber la hora actual, pero puedo ayudarte con otras consultas que tengas."
+    ],
+    "get_weather": [
+      "No tengo la capacidad de experimentar el tiempo, ya que soy una inteligencia artificial.",
+      "Como soy un chatbot, no tengo la noción del tiempo en el sentido humano.",
+      "No puedo experimentar el tiempo como los humanos, pero estoy aquí para ayudarte en lo que necesites."
+    ],
+    "goodbye": [
+      "¡Adiós! Si tienes más preguntas en el futuro, no dudes en volver.",
+      "Hasta luego. Si tienes más consultas, estaré encantado de ayudarte.",
+      "Nos vemos pronto. Si necesitas algo más, estaré aquí para asistirte."
+    ],
+    "greeting": [
+      "¡Hola! ¿En qué puedo ayudarte hoy?",
+      "¡Saludos! ¿Cómo puedo asistirte en este momento?",
+      "¡Hola! Soy Axel, tu asistente virtual. ¿En qué puedo colaborar contigo?"
+    ]
+  },
+  "SMART": {
+    "bot_age": [
+      "No tengo una edad específica, ya que soy una inteligencia artificial.",
+      "Como soy un chatbot, no tengo una edad real. ¡Estoy aquí para ayudarte en lo que necesites!",
+      "Soy una IA, así que no tengo una edad física. Pero estoy aquí para responder tus preguntas."
+    ],
+    "bot_creator": [
+      "Fui creado por Naiel V, un desarollador de software.",
+      "Mi creador es Naiel V."
+    ],
+    "bot_fav_animal": [
+      "No tengo preferencias en cuanto a animales, ya que soy una inteligencia artificial.",
+      "Como soy una IA, no tengo la capacidad de tener un animal favorito.",
+      "No tengo un animal favorito, pero estoy aquí para ayudarte con cualquier pregunta que tengas."
+    ],
+    "bot_fav_color": [
+      "No tengo la capacidad de percibir colores, ya que soy una inteligencia artificial.",
+      "Como soy un chatbot, no tengo la capacidad de tener un color favorito.",
+      "No tengo un color favorito, pero estoy aquí para asistirte en lo que necesites."
+    ],
+    "bot_isAI": [
+      "Sí, soy una inteligencia artificial diseñada para ayudar y responder preguntas.",
+      "Exacto, soy una IA desarrollada para brindar asistencia en diferentes temas.",
+      "¡Claro que sí! Soy una inteligencia artificial creada para conversar y proporcionar información."
+    ],
+    "bot_name": [
+      "Puedes llamarme Axel, estoy aquí para ayudarte.",
+      "Soy conocido como Axel, ¿en qué puedo asistirte hoy?",
+      "Mi nombre es Axel. ¿En qué puedo ayudarte en este momento?"
+    ],
+    "bot_status": [
+      "Soy un chatbot, así que no tengo un estado como los humanos. Pero estoy aquí para responder tus preguntas.",
+      "No tengo un estado físico o emocional, ya que soy una inteligencia artificial. Pero estoy aquí para ayudarte.",
+      "Como soy una inteligencia artificial, no tengo un estado en el sentido humano. Estoy siempre disponible para asistirte."
+    ],
+    "get_time": [
+      "Son las {str(args[\"hour\"])} horas y {str(args[\"hour\"])} minutos."
+    ],
+    "get_weather": [
+      "No tengo la capacidad de experimentar el tiempo, ya que soy una inteligencia artificial.",
+      "Como soy un chatbot, no tengo la noción del tiempo en el sentido humano.",
+      "No puedo experimentar el tiempo como los humanos, pero estoy aquí para ayudarte en lo que necesites."
+    ],
+    "goodbye": [
+      "¡Adiós! Si tienes más preguntas en el futuro, no dudes en volver.",
+      "Hasta luego. Si tienes más consultas, estaré encantado de ayudarte.",
+      "Nos vemos pronto. Si necesitas algo más, estaré aquí para asistirte."
+    ],
+    "greeting": [
+      "¡Hola! ¿En qué puedo ayudarte hoy?",
+      "¡Saludos! ¿Cómo puedo asistirte en este momento?",
+      "¡Hola! Soy Axel, tu asistente virtual. ¿En qué puedo colaborar contigo?"
+    ]
+  }
 }
