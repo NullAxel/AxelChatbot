@@ -27,10 +27,10 @@ def generate(inp: str, args = {}):
     else:
         try:
             # response = choice(INTENTS[intent_name].format(args=args))
-            if str(args.get("mode")) == "1":
-                response = choice(SMART[intent_name])
+            if str(args.get("mode")) == "smart":
+                response = choice(SMART[intent_name]).format(args=args)
             else:
-                response = choice(INTENTS[intent_name]).format(args=args)
+                response = choice(INTENTS[intent_name])
             return {"result": response, "intent": intent_name, "input": inp}
         except KeyError:
             return {"result": choice(ERROR_RESPONSES), "intent": intent_name, "input": inp, "error": [0, "Missing intent '" + intent_name + "' in config."]}
