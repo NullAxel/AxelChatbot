@@ -99,7 +99,7 @@
       "Como soy una inteligencia artificial, no tengo un estado en el sentido humano. Estoy siempre disponible para asistirte."
     ],
     "get_time": [
-      "Son las {str(args[\"hour\"])} horas y {str(args[\"hour\"])} minutos."
+      "Son las {str(args['hour'])} horas y {str(args['hour'])} minutos."
     ],
     "get_weather": [
       "No tengo la capacidad de experimentar el tiempo, ya que soy una inteligencia artificial.",
