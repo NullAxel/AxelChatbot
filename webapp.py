@@ -16,7 +16,7 @@ def ask_render():
 
 @app.route('/ask/args')
 def ask_args():
-    return generate(request.args.get("text"), args=request.args)["result"]
+    return generate(request.args.get("text"), args=request.args.to_dict())["result"]
                                                     
 @app.route('/ask/url/<text>')
 def ask_url(text):
