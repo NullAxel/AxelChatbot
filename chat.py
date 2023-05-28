@@ -28,7 +28,9 @@ def generate(inp: str, args = {}):
         try:
             # response = choice(INTENTS[intent_name].format(args=args))
             if str(args.get("mode")) == "smart":
-                response = choice(SMART[intent_name]).format(args=args)
+                s=INTENTS
+                s.update(SMART)
+                response = choice(s[intent_name]).format(args=args)
             else:
                 response = choice(INTENTS[intent_name])
             return {"result": response, "intent": intent_name, "input": inp}
