@@ -115,6 +115,9 @@
       "¡Hola! ¿En qué puedo ayudarte hoy?",
       "¡Saludos! ¿Cómo puedo asistirte en este momento?",
       "¡Hola! Soy Axel, tu asistente virtual. ¿En qué puedo colaborar contigo?"
+    ],
+    "bot_users_total": [
+        "No se realmente la cantidad de usuarios que tengo, pero puedes revisar la pagina web para mas información."
     ]
   }
 }
