@@ -33,6 +33,7 @@ def generate(inp: str, args = {}):
                 response = choice(INTENTS[intent_name])
             return {"result": response, "intent": intent_name, "input": inp}
         except KeyError as e:
+            print(e)
             #return {"result": "El Pepe"}
             return {"result": choice(ERROR_RESPONSES), "intent": intent_name, "input": inp, "error": [0, "Missing intent '" + intent_name + "' in config."]}
         
