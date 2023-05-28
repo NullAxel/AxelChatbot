@@ -43,9 +43,7 @@
       "Como soy una inteligencia artificial, no tengo un estado en el sentido humano. Estoy siempre disponible para asistirte."
     ],
     "get_time": [
-      "Lo siento, como soy un chatbot, no tengo acceso a la hora actual.",
-      "No puedo proporcionar la hora actual, ya que soy una inteligencia artificial sin capacidad para acceder a esa información.",
-      "No tengo la capacidad de saber la hora actual, pero puedo ayudarte con otras consultas que tengas."
+      "No tengo acceso a la hora local de tu dispositivo por que no estas usando la app."
     ],
     "get_weather": [
       "No tengo la capacidad de experimentar el tiempo, ya que soy una inteligencia artificial.",
