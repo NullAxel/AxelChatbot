@@ -11,4 +11,4 @@ COPY chat.py chat.py
 COPY telegram_bot.py main.py
 COPY responses.json responses.json
 
-CMD ["python3", "main.py"]
+CMD ["python3", "telegram_bot.py"]
